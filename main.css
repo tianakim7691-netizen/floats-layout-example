@@ -1,0 +1,252 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+
+
+/*---------------------------- button -----------------------------*/
+
+#to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+}
+#to-top img{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+#to-bottom {
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    z-index: 999;
+}
+#to-bottom img{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+/*---------------------------- header & nav -----------------------------*/
+
+
+header {
+    padding: 10px 10px 10px 10px; 
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+main {
+    top: 0%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+nav{
+    background-color: #ffffff;
+    padding: 8px 16px;   
+    border-radius: 16px;
+}
+
+header nav > a {
+    display: inline-block;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    background-color: black;
+    padding: 8px 16px;   
+    border-radius: 16px;
+
+   /* border: solid 1px red;*/
+   /*parents width-log width*/
+   /* width: calc(100% - 10px - 276px - 2px - 5px);*/
+}
+
+
+/* Nav Menu(nav>ul) */
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ----------------------------Nav Links (nav >ul > li> a) ----------------------------*/
+
+.nablink:link ,
+.nablink:visited {
+    color: white;
+}
+
+header nav > a img {
+    width: 40px;
+    height: auto;
+    background-color: white;
+}
+
+
+.nablink:hover {
+    color: rgb(229,149,0);
+}
+
+
+.nablink:active {
+    color: rgb(229,149,0);
+}
+
+/*---------------------------- footer -----------------------------*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer {
+    font-size: small;
+    text-align: center;
+    display: inline-block;
+    color: aliceblue;
+    margin-right: 20px;
+    padding: 20px 20px 0px 0px;
+    background-color: #000000;
+}
+
+.footer-text {
+    font-size: small;
+    color: pink;
+    padding: 10px 10px;
+}
+
+/*----------------------------- dropdown --------------------------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#services-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 150px;
+    background-color: #252525;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    display: block;
+    text-align: center;
+}
+
+#services-menu a {
+    background-color: #252525;
+    display: block;
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #ffffff;
+}
+
+.dropdown:hover #services-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------------------------- float --------------------------*/
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6; 
+}
+
+.content-block {
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.image-in-section {
+    width: 40%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.text-content {
+    width: 55%;
+    float: left;
+    padding: 10px;
+}
+
+.right-align-text {
+    float: right;
+    text-align: left;
+}
+
+.image-row-in-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.image-row-in-section img {
+    width: 40%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.text-center-content {
+   text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.centered-text-block p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.clearfix::after,
+.clear-both::after {
+    content: "";
+    display: table;
+    clear: both;
+}
